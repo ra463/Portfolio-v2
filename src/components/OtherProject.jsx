@@ -9,15 +9,15 @@ const OtherProject = () => {
         <h2>Some Project's I've built</h2>
         <span>Listed below</span>
       </div>
-      <ol className="list_other">
+      <ul className="list_other">
         <li>
           <div className="main_box">
             <div className="header">
               <div className="first">
-                <FiFolder />
+                <FiFolder className="fold" />
                 <div className="link">
                   <a
-                    href="https://github.com/ra463/Dev-portfolio"
+                    href="https://github.com/ra463/Ecommerce"
                     aria-label="GitHub Link"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -25,7 +25,7 @@ const OtherProject = () => {
                     <FiGithub />
                   </a>
                   <a
-                    href="https://dev-portfolio-flax.vercel.app/"
+                    href="https://ecommerce-rp.herokuapp.com/"
                     aria-label="External Link"
                     className="external"
                     rel="noopener noreferrer"
@@ -36,27 +36,161 @@ const OtherProject = () => {
                 </div>
               </div>
               <h3>
-                <a href="/">Test Project 2021</a>
+                <a href="/">Ecommerce Online Shopping Website</a>
               </h3>
               <div className="para">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Minima asperiores quibusdam quod dicta.
-                  Facilis amet doloribus exercitationem officia itaque sapiente.
+                  This is a <span>Ecommerce</span> Website which is built using{" "}
+                  <span>MERN Stack</span>. This website has all the features of
+                  Ecommerce Website like Cart, Wishlist,{" "}
+                  <span>Payment Gateway</span>, etc.
                 </p>
               </div>
             </div>
             <div className="footer">
               <ol>
                 <li>React</li>
-                <li>Next</li>
+                <li>MongoDb</li>
                 <li>Node</li>
               </ol>
             </div>
           </div>
         </li>
-      </ol>
+        <li>
+          <div className="main_box">
+            <div className="header">
+              <div className="first">
+                <FiFolder className="fold" />
+                <div className="link">
+                  <a
+                    href="https://github.com/ra463/SocialMedia"
+                    aria-label="GitHub Link"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiGithub />
+                  </a>
+                  <a
+                    href="https://social-rp.herokuapp.com/"
+                    aria-label="External Link"
+                    className="external"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiExternalLink />
+                  </a>
+                </div>
+              </div>
+              <h3>
+                <a href="/">Photo & Video Sharing Webapp</a>
+              </h3>
+              <div className="para">
+                <p>
+                  In this Webapp, you can share your photos and videos with your
+                  friends & family and can follow eachother. You can also like
+                  and comment on other people's posts.
+                </p>
+              </div>
+            </div>
+            <div className="footer">
+              <ol>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>ExpressJS</li>
+              </ol>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="main_box">
+            <div className="header">
+              <div className="first">
+                <FiFolder className="fold" />
+                <div className="link">
+                  <a
+                    href="https://github.com/ra463/food"
+                    aria-label="GitHub Link"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiGithub />
+                  </a>
+                  <a
+                    href="https://ra463.github.io/food/"
+                    aria-label="External Link"
+                    className="external"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiExternalLink />
+                  </a>
+                </div>
+              </div>
+              <h3>
+                <a href="/">Satic Food Website</a>
+              </h3>
+              <div className="para">
+                <p>
+                  This is simple static Food Website built with HTML and CSS.
+                  This website is fully responsive and has a beautiful UI.
+                </p>
+              </div>
+            </div>
+            <div className="footer">
+              <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Github</li>
+              </ol>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="main_box">
+            <div className="header">
+              <div className="first">
+                <FiFolder className="fold" />
+                <div className="link">
+                  <a
+                    href="https://github.com/ra463/Portfolio-v2"
+                    aria-label="GitHub Link"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiGithub />
+                  </a>
+                  <a
+                    href="https://rachitpatel.vercel.app/"
+                    aria-label="External Link"
+                    className="external"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FiExternalLink />
+                  </a>
+                </div>
+              </div>
+              <h3>
+                <a href="/">Version-2 (v2) of My Portfolio</a>
+              </h3>
+              <div className="para">
+                <p>
+                  This is the second version of my portfolio website. This
+                  website is built using ReactJS and SCSS. This website is fully
+                  responsive and has a beautiful UI.
+                </p>
+              </div>
+            </div>
+            <div className="footer">
+              <ol>
+                <li>SCSS</li>
+                <li>ReactJS</li>
+                <li>Portfolio</li>
+              </ol>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   );
 };

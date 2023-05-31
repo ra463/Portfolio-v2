@@ -15,13 +15,13 @@ const Main = () => {
         <section className="intro">
           <Intro />
         </section>
-        <section className="about">
+        <section id="about" className="about">
           <About />
         </section>
-        <section className="exp">
+        <section id="exp" className="exp">
           <Experience />
         </section>
-        <section className="project">
+        <section id="project" className="project">
           <Project />
         </section>
         <section className="other_project">

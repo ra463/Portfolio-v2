@@ -29,6 +29,7 @@
         .first_about {
             p {
                 line-height: 1.5;
+                color: #8892b0;
                 span {
                     color: #64ffda;
                     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -45,6 +46,8 @@
                         list-style: none;
                         display: flex;
                         flex-direction: row;
+                        background: transparent;
+                        color: #8892b0;
                         font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
                         gap: 10px;
                         span {
@@ -74,24 +77,24 @@
     }
 
     @media screen and (max-width: 920px) {
-        .def{
+        .def {
             grid-template-columns: 1fr;
 
-            .second_about{
+            .second_about {
                 margin: 0 auto;
             }
         }
     }
 
     @media screen and (max-width: 560px) {
-        .about_inner{
-            p{
+        .about_inner {
+            p {
                 width: 10rem;
             }
         }
-        .def{
-            .second_about{
-                .image{
+        .def {
+            .second_about {
+                .image {
                     padding-left: 0;
                 }
             }

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import { HiMenuAlt1 } from "react-icons/hi";
+import { MdOutlineClose } from "react-icons/md";
 const Nav = () => {
   const [show, setShow] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
@@ -23,7 +25,6 @@ const Nav = () => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
 
-      // cleanup function
       return () => {
         window.removeEventListener("scroll", controlNavbar);
       };
@@ -70,22 +71,65 @@ const Nav = () => {
       <ol>
         <li>
           {" "}
-          <span>1.</span> About
+          <a href="#about">
+            <span>1.</span> About
+          </a>
         </li>
         <li>
           {" "}
-          <span>2.</span> Experience
+          <a href="#exp">
+            <span>2.</span> Experience
+          </a>
         </li>
         <li>
           {" "}
-          <span>3.</span> Project
+          <a href="#project">
+            <span>3.</span> Project
+          </a>
         </li>
         <li>
           {" "}
-          <span>4.</span> Contact
+          <a href="#contact">
+            <span>4.</span> Contact
+          </a>
         </li>
         <button>Resume</button>
       </ol>
+      <div className="menu" onClick={() => setHidden(true)}>
+        <HiMenuAlt1 />
+      </div>
+      <div className={`${hidden ? "menu_hidden" : "menu_item"}`}>
+        <div className="cross" onClick={() => setHidden(false)}>
+          <MdOutlineClose />
+        </div>
+        <ol>
+          <li>
+            {" "}
+            <a href="#about">
+              <span>1.</span> About
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#exp">
+              <span>2.</span> Experience
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#project">
+              <span>3.</span> Project
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#contact">
+              <span>4.</span> Contact
+            </a>
+          </li>
+          <button>Resume</button>
+        </ol>
+      </div>
     </nav>
   );
 };

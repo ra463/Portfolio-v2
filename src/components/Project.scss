@@ -80,6 +80,10 @@
                         background-color: transparent;
                         color: #ccd6f6;
                         font-size: 1.5rem;
+
+                        &:hover {
+                            color: #64ffda;
+                        }
                     }
                 }
                 .project_desc {

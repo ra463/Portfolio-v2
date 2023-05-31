@@ -38,6 +38,8 @@
 
             button {
                 padding: 15px;
+                background: transparent;
+                color: #8892b0;
                 outline: none;
                 border: none;
                 border-left: 2px solid #8892b0;
@@ -107,6 +109,7 @@
 
                     .second {
                         margin-top: -10px;
+                        color: #8892b0;
                         span {
                             font-size: 14px;
                             font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -115,6 +118,7 @@
                 }
 
                 .desc {
+                    color: #8892b0;
                     ol {
                         padding-left: 0;
                         line-height: 1.5;
@@ -171,6 +175,8 @@
                     padding: 15px;
                     outline: none;
                     border: none;
+                    background: transparent;
+                    color: #8892b0;
                     border-bottom: 2px solid #8892b0;
                     cursor: pointer;
                     position: relative;
