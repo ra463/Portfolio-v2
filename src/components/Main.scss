@@ -53,7 +53,7 @@
                     color: #64ffda;
                 }
 
-                a{
+                a {
                     text-decoration: none;
                     color: #ccd6f6;
                     margin: 0;
@@ -80,7 +80,7 @@
             display: none;
         }
 
-        .menu_item{
+        .menu_item {
             display: none;
         }
     }
@@ -93,7 +93,7 @@
             .menu {
                 display: flex;
                 font-size: 2.5rem;
-                margin-right: 3rem;
+                margin-right: 2.3rem;
                 color: #64ffda;
             }
             .menu_item {
@@ -103,6 +103,7 @@
                 top: 0;
                 right: -18rem;
                 padding: 3rem;
+                padding-right: 2.3rem;
                 padding-top: 1.8rem;
                 background: #112240;
                 transition: 0.3s all linear;
@@ -126,6 +127,7 @@
                 top: 0;
                 right: 0;
                 padding: 3rem;
+                padding-right: 2.3rem;
                 padding-top: 1.8rem;
                 background: #112240;
                 transition: 0.3s all linear;

@@ -6,7 +6,7 @@ const OtherProject = () => {
   return (
     <div className="other_pro">
       <div className="other_inner">
-        <h2>Some Project's I've built</h2>
+        <h2>Some Other Project's</h2>
         <span>Listed below</span>
       </div>
       <ul className="list_other">
