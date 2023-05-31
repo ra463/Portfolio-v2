@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.main_page {
+    .active-nav {
+        height: 5rem;
+        width: 100%;
+        top: 0px;
+        transition: 0.3s linear;
+    }
+    .hidden {
+        height: 4rem;
+        width: 100%;
+        z-index: 40;
+        top: -100px;
+        transition: 0.3s linear;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        user-select: none;
+        background: rgba(10, 25, 47, 0.65);
+        backdrop-filter: blur(10px);
+        height: 5rem;
+        z-index: 11;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 0;
+
+        a {
+            margin-left: 3rem;
+        }
+
+        ol {
+            margin-right: 3rem;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            gap: 40px;
+
+            li {
+                color: #ccd6f6;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                transition: 0.3s linear;
+                background: transparent;
+                font-size: 15px;
+                &:hover {
+                    color: #64ffda;
+                }
+
+                span {
+                    color: #64ffda;
+                    background: transparent;
+                    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                }
+            }
+
+            button {
+                border: 1px solid #64ffda;
+                color: #64ffda;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        nav {
+            ol {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        nav {
+            a {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.main_page {
+    #content {
+        padding: 0px 150px;
+
+        section {
+            margin: 0px auto;
+            max-width: 1000px;
+        }
+
+        .intro {
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+
+            .intro_inner {
+                div:nth-child(1) {
+                    color: #64ffda;
+                    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                    font-size: 18px;
+                    margin-left: 4px;
+                    padding-bottom: 1rem;
+                }
+                div:nth-child(2) {
+                    h2 {
+                        font-size: 4.2rem;
+                        color: #ccd6f6;
+                        margin: 0;
+                    }
+                }
+                div:nth-child(3) {
+                    padding-bottom: 0.5rem;
+                    h2 {
+                        font-size: 4.2rem;
+                        margin: 0;
+                    }
+                }
+                div:nth-child(4) {
+                    p {
+                        margin: 20px 0px 0px;
+                        max-width: 540px;
+                        font-size: 18px;
+                        line-height: 1.5;
+
+                        span {
+                            color: #64ffda;
+                            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                        }
+                    }
+                }
+                div:nth-child(5) {
+                    margin-top: 60px;
+                    a {
+                        text-decoration: none;
+                        color: #64ffda;
+                        border: 1px solid #64ffda;
+                        padding: 15px 35px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                        transition: 0.3s linear;
+                    }
+                }
+            }
+        }
+        .about {
+            margin-top: 50px;
+        }
+        .exp {
+            margin-top: 50px;
+        }
+        .project {
+            margin-top: 50px;
+        }
+        .other_project {
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1005px) {
+        #content {
+            .other_project {
+                margin-top: 85px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 830px) {
+        #content {
+            .other_project {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        #content {
+            padding: 0px 100px;
+
+            section {
+                max-width: 1200px;
+            }
+            .intro {
+                .intro_inner {
+                    div:nth-child(2) {
+                        h2 {
+                            font-size: 3.6rem;
+                        }
+                    }
+                    div:nth-child(3) {
+                        padding-bottom: 0;
+                        h2 {
+                            font-size: 3.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        #content {
+            padding: 0px 2rem;
+
+            section {
+                max-width: 1600px;
+            }
+            .intro {
+                .intro_inner {
+                    div:nth-child(2) {
+                        h2 {
+                            font-size: 3rem;
+                        }
+                    }
+                    div:nth-child(3) {
+                        h2 {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        #content {
+            .about {
+                padding-top: 25px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        #content {
+            padding: 0px 1rem;
+
+            .intro {
+                .intro_inner {
+                    div:nth-child(2) {
+                        h2 {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    div:nth-child(3) {
+                        h2 {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    div:nth-child(4) {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                    div:nth-child(5) {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
