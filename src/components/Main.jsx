@@ -6,6 +6,8 @@ import About from "./About";
 import Experience from "./Experience";
 import Project from "./Project";
 import OtherProject from "./OtherProject";
+import Education from "./Education";
+import Contact from "./Contact";
 
 const Main = () => {
   return (
@@ -26,6 +28,12 @@ const Main = () => {
         </section>
         <section className="other_project">
           <OtherProject />
+        </section>
+        <section id="education" className="education">
+          <Education />
+        </section>
+        <section id="contact" className="contact">
+          <Contact />
         </section>
       </div>
     </div>

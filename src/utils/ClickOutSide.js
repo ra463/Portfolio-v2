@@ -11,10 +11,12 @@ export default function useClickOutside(ref, callback) {
 
     document.addEventListener("mousedown", handleClick);
     document.addEventListener("touchstart", handleClick);
+    document.addEventListener("scroll", handleClick);
 
     return () => {
       document.removeEventListener("mousedown", handleClick);
       document.removeEventListener("touchstart", handleClick);
+      document.addEventListener("scroll", handleClick);
     };
   });
 }

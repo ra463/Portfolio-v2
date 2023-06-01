@@ -1,0 +1,68 @@
+.educ {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    box-sizing: inherit;
+
+    .container {
+        background: #112240;
+        border-radius: 5px;
+        border: 2px solid #112240;
+
+        .inner_box {
+            padding: 1rem;
+            .head {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #a8b2d1;
+                .logo {
+                    img {
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                    }
+                }
+
+                h2 {
+                    color: #ccd6f6;
+                    margin: 0;
+                }
+            }
+
+            .remain {
+                display: flex;
+                padding-top: 10px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                div:nth-child(1) {
+                    color: #a8b2d1;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                div:nth-child(2) {
+                    color: #64ffda;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                div:nth-child(3) {
+                    color: #a8b2d1;
+                    span {
+                        font-size: 0.9rem;
+                        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                    }
+                }
+            }
+        }
+    }
+
+    .border {
+        border: 2px solid #64ffda;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    }
+}

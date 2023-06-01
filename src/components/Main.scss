@@ -111,7 +111,6 @@
                     font-size: 2.5rem;
                     text-align: end;
                     margin: 0;
-
                     color: #64ffda;
                 }
                 ol {
@@ -158,6 +157,15 @@
                         justify-content: center;
                         width: 100%;
                         gap: 4rem;
+
+                        li {
+                            a {
+                                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+                                &:hover {
+                                    color: #64ffda;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -273,6 +281,9 @@
             margin-top: 50px;
         }
         .other_project {
+            margin-top: 50px;
+        }
+        .education{
             margin-top: 50px;
         }
     }
