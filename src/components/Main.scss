@@ -37,11 +37,11 @@
             display: flex;
             align-items: center;
             background: transparent;
+            position: relative;
             gap: 40px;
 
             li {
                 color: #ccd6f6;
-                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -55,13 +55,13 @@
 
                 a {
                     text-decoration: none;
+                    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
                     color: #ccd6f6;
                     margin: 0;
 
                     span {
                         color: #64ffda;
                         background: transparent;
-                        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
                     }
                 }
             }
@@ -72,7 +72,25 @@
                 color: #64ffda;
                 padding: 10px 20px;
                 border-radius: 4px;
+                transition: 0.2s all linear;
                 cursor: pointer;
+
+                &:hover {
+                    transform: translate(-5px, -5px);
+                    outline: none;
+                    border-bottom: 4px solid #64ffda;
+                    border-right: 4px solid #64ffda;
+                }
+            }
+        }
+
+        .top {
+            position: relative;
+            margin-right: 10rem;
+
+            button {
+                position: absolute;
+                right: -7.5rem;
             }
         }
 
@@ -155,6 +173,7 @@
                         align-items: flex-start;
                         padding-right: 2rem;
                         justify-content: center;
+                        position: relative;
                         width: 100%;
                         gap: 4rem;
 
@@ -165,6 +184,11 @@
                                     color: #64ffda;
                                 }
                             }
+                        }
+
+                        button {
+                            position: absolute;
+                            bottom: -5rem;
                         }
                     }
                 }
@@ -258,21 +282,31 @@
                 }
                 div:nth-child(5) {
                     margin-top: 60px;
+                    position: relative;
+                    display: flex;
+
                     a {
+                        top: -10px;
+                        position: absolute;
                         text-decoration: none;
                         color: #64ffda;
                         border: 1px solid #64ffda;
                         padding: 15px 35px;
                         border-radius: 4px;
-                        cursor: pointer;
                         font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-                        transition: 0.3s linear;
+                        transition: 0.1s linear;
+
+                        &:hover {
+                            transform: translate(-5px, -5px);
+                            border-bottom: 4px solid #64ffda;
+                            border-right: 4px solid #64ffda;
+                        }
                     }
                 }
             }
         }
         .about {
-            margin-top: 50px;
+            margin-top: 80px;
         }
         .exp {
             margin-top: 50px;
@@ -283,8 +317,14 @@
         .other_project {
             margin-top: 50px;
         }
-        .education{
+        .education {
             margin-top: 50px;
+        }
+        .contact {
+            margin-top: 70px;
+        }
+        .foote {
+            margin-top: 10rem;
         }
     }
 
@@ -292,14 +332,6 @@
         #content {
             .other_project {
                 margin-top: 85px;
-            }
-        }
-    }
-
-    @media screen and (max-width: 830px) {
-        #content {
-            .other_project {
-                margin-top: 50px;
             }
         }
     }
@@ -325,6 +357,18 @@
                         }
                     }
                 }
+            }
+            .email,
+            .main_icon {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 830px) {
+        #content {
+            .other_project {
+                margin-top: 50px;
             }
         }
     }

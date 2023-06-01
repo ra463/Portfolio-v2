@@ -13,26 +13,26 @@ const Project = () => {
       <div className="pro_section">
         <div className="pro_1">
           <div className="img">
-            <img src="/ecommerce.png" alt="E-commerce" />
+            <img src="/finder.png" alt="E-commerce" />
           </div>
           <div className="project_head">
             <p className="project_tag">Project Name</p>
             <h3 className="project_title">
               <a
-                href="https://ecommerce-rp.herokuapp.com/"
+                href="https://finderapp.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Ecommerce Website
+                Finder Webapp
               </a>
             </h3>
             <div className="project_desc back1">
               <p>
-                This is a <span>Ecommerce</span> Website which is built using{" "}
-                <span>MERN Stack</span>
-                (MongoDB, Express, React, NodeJS). This website has all the
-                features of Ecommerce Website like Cart, Wishlist,{" "}
-                <span>Payment Gateway</span>, etc.
+                The name of this project is <span>Finder</span>. The main aim of
+                this Project that you can report the <span>missing person</span>{" "}
+                and you can also <span>submit report</span> of the missing
+                person you have found. This project is built using{" "}
+                <span>MERN Stack</span>.
               </p>
             </div>
             <ul className="project_item">
@@ -44,7 +44,7 @@ const Project = () => {
             </ul>
             <div className="project_l">
               <a
-                href="https://github.com/ra463/Ecommerce"
+                href="https://github.com/ra463/FrontF"
                 aria-label="GitHub Link"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -52,7 +52,7 @@ const Project = () => {
                 <FiGithub />
               </a>
               <a
-                href="https://ecommerce-rp.herokuapp.com/"
+                href="https://finderapp.vercel.app/"
                 aria-label="External Link"
                 className="external"
                 rel="noopener noreferrer"

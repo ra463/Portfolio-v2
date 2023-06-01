@@ -1,0 +1,53 @@
+.foo {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 2rem;
+
+            a {
+                font-size: 1.2rem;
+                color: #8892b0;
+
+                &:hover {
+                    color: #64ffda;
+                }
+            }
+        }
+        .para {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
+            align-items: center;
+            color: #8892b0;
+            transition: 0.2s ease-in-out;
+
+            p {
+                margin: 0;
+                font-size: 0.9rem;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+                &:nth-child(1) {
+                    margin-bottom: 0.3rem;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 1.7rem;
+                }
+            }
+
+            &:hover {
+                color: #64ffda;
+            }
+        }
+    }
+}

@@ -108,11 +108,13 @@ const Experience = () => {
                 <div className="head">
                   <div className="logo">
                     <img
-                      src="https://dev-portfolio-flax.vercel.app/spring.png"
+                      src="https://image3.mouthshut.com/images/imagesp/925717399s.jpg"
                       alt=""
                     />
                   </div>
-                  <h2>Gyan Ganga Institute of Technology and Sciences</h2>
+                  <h2 style={{
+                    fontSize: "1.3rem"
+                  }}>Gyan Ganga Institute of Technology and Sciences</h2>
                 </div>
                 <div className="remain">
                   <div className="first">Bachelor Of Technology Degree</div>

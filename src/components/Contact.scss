@@ -1,0 +1,55 @@
+.contact_div {
+    max-width: 600px;
+    margin: auto;
+    .contact_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            color: #64ffda;
+            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        }
+
+        h1 {
+            color: #ccd6f6;
+            margin-top: 4px;
+            font-size: 2rem;
+        }
+    }
+    .contact_para {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        p {
+            color: #8892b0;
+            font-size: 1.1rem;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        a {
+            margin-top: 2rem;
+            position: absolute;
+            text-decoration: none;
+            color: #64ffda;
+            border: 1px solid #64ffda;
+            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+            padding: 15px 20px;
+            border-radius: 4px;
+            transition: 0.2s ease-in-out;
+            top: 5.5rem;
+
+            &:hover {
+                transform: translate(-5px, -5px);
+                outline: none;
+                border-bottom: 4px solid #64ffda;
+                border-right: 4px solid #64ffda;
+            }
+        }
+    }
+}

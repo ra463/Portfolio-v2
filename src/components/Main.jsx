@@ -8,6 +8,9 @@ import Project from "./Project";
 import OtherProject from "./OtherProject";
 import Education from "./Education";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import Icons from "./Icons";
+import Email from "./Email";
 
 const Main = () => {
   return (
@@ -35,6 +38,11 @@ const Main = () => {
         <section id="contact" className="contact">
           <Contact />
         </section>
+        <section id="footer" className="foote">
+          <Footer />
+        </section>
+        <Icons />
+        <Email />
       </div>
     </div>
   );

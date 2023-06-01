@@ -1,0 +1,67 @@
+.main_icon {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    transform: rotate(90deg);
+    left: -6.7rem;
+    bottom: 9rem;
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+
+        a {
+            font-size: 1.2rem;
+            color: #ccd6f6;
+            transform: rotate(-90deg);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: #64ffda;
+                transform: rotate(-90deg) translateY(-0.3rem);
+            }
+        }
+    }
+    p {
+        width: 6rem;
+        height: 2px;
+        background-color: #8892b0;
+    }
+}
+
+.email {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    transform: rotate(90deg);
+    right: -5rem;
+    bottom: 8rem;
+
+    a {
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        color: #ccd6f6;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+        &:hover {
+            color: #64ffda;
+            transform:translateX(-0.3rem);
+        }
+    }
+
+    p {
+        width: 6rem;
+        height: 2px;
+        background-color: #8892b0;
+    }
+}

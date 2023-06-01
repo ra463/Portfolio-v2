@@ -18,7 +18,7 @@ const Nav = () => {
       // keep scroll visible but disable when nav menu open
       if (window.scrollY > lastScrollY) {
         // if scroll down hide the navbar
-        if(hidden === false){
+        if (hidden === false) {
           setShow(true);
         }
       } else {
@@ -77,7 +77,7 @@ const Nav = () => {
           </g>
         </svg>
       </a>
-      <ol>
+      <ol className="top">
         <li>
           {" "}
           <a href="#about">
@@ -98,8 +98,14 @@ const Nav = () => {
         </li>
         <li>
           {" "}
+          <a href="#education">
+            <span>4.</span> Education
+          </a>
+        </li>
+        <li>
+          {" "}
           <a href="#contact">
-            <span>4.</span> Contact
+            <span>5.</span> Contact
           </a>
         </li>
         <button>Resume</button>
@@ -134,8 +140,14 @@ const Nav = () => {
             </li>
             <li>
               {" "}
+              <a href="#education">
+                <span>4.</span> Education
+              </a>
+            </li>
+            <li>
+              {" "}
               <a href="#contact">
-                <span>4.</span> Contact
+                <span>5.</span> Contact
               </a>
             </li>
             <button>Resume</button>
