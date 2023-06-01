@@ -1,17 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
+import useClickOutside from "../utils/ClickOutSide";
+
 const Nav = () => {
   const [show, setShow] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const closeMenu = useRef(null);
+
+  useClickOutside(closeMenu, () => {
+    setHidden(false);
+  });
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       // keep scroll visible but disable when nav menu open
       if (window.scrollY > lastScrollY) {
         // if scroll down hide the navbar
-        if (hidden === false) {
+        if(hidden === false){
           setShow(true);
         }
       } else {
@@ -101,36 +108,39 @@ const Nav = () => {
         <HiMenuAlt1 />
       </div>
       <div className={`${hidden ? "menu_hidden" : "menu_item"}`}>
-        <div className="cross" onClick={() => setHidden(false)}>
-          <MdOutlineClose />
+        <div className="blur"></div>
+        <div className="item" ref={closeMenu}>
+          <div className="cross" onClick={() => setHidden(false)}>
+            <MdOutlineClose />
+          </div>
+          <ol>
+            <li>
+              {" "}
+              <a href="#about">
+                <span>1.</span> About
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#exp">
+                <span>2.</span> Experience
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#project">
+                <span>3.</span> Project
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="#contact">
+                <span>4.</span> Contact
+              </a>
+            </li>
+            <button>Resume</button>
+          </ol>
         </div>
-        <ol>
-          <li>
-            {" "}
-            <a href="#about">
-              <span>1.</span> About
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="#exp">
-              <span>2.</span> Experience
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="#project">
-              <span>3.</span> Project
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="#contact">
-              <span>4.</span> Contact
-            </a>
-          </li>
-          <button>Resume</button>
-        </ol>
       </div>
     </nav>
   );
