@@ -8,14 +8,16 @@ const Nav = () => {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
+      // keep scroll visible but disable when nav menu open
       if (window.scrollY > lastScrollY) {
         // if scroll down hide the navbar
-        setShow(true);
+        if (hidden === false) {
+          setShow(true);
+        }
       } else {
         // if scroll up show the navbar
         setShow(false);
       }
-
       // remember current page location to use in the next move
       setLastScrollY(window.scrollY);
     }

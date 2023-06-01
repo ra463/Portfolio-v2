@@ -305,6 +305,9 @@
 
     @media screen and (max-width: 560px) {
         #content {
+            .intro{
+                margin-top: 4rem;
+            }
             .about {
                 padding-top: 1px;
             }
