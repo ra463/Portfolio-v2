@@ -108,7 +108,9 @@ const Nav = () => {
             <span>5.</span> Contact
           </a>
         </li>
-        <button>Resume</button>
+        <a className="resume" href="/Myresume.pdf" rel="noopener noreferrer" target="_blank">
+              Resume
+            </a>
       </ol>
       <div className="menu" onClick={() => setHidden(true)}>
         <HiMenuAlt1 />
@@ -150,7 +152,9 @@ const Nav = () => {
                 <span>5.</span> Contact
               </a>
             </li>
-            <button>Resume</button>
+            <a className="resume" href="/Myresume.pdf" rel="noopener noreferrer" target="_blank">
+              Resume
+            </a>
           </ol>
         </div>
       </div>

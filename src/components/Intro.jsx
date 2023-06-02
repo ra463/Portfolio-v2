@@ -19,8 +19,8 @@ const Intro = () => {
         </p>
       </div>
       <div className="fifth">
-        <a href="#contact" className="btn">
-          Explore More
+        <a href="#about" className="btn">
+          Read About Me
         </a>
       </div>
     </div>

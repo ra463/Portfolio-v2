@@ -52,4 +52,12 @@
             }
         }
     }
+
+    @media screen and (max-width:430px) {
+        .contact_para{
+            a{
+                top: 7rem;
+            }
+        }
+    }
 }

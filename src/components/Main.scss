@@ -66,9 +66,9 @@
                 }
             }
 
-            button {
+            .resume {
                 border: 1px solid #64ffda;
-                background: transparent;
+                text-decoration: none;
                 color: #64ffda;
                 padding: 10px 20px;
                 border-radius: 4px;
@@ -88,7 +88,7 @@
             position: relative;
             margin-right: 10rem;
 
-            button {
+            .resume {
                 position: absolute;
                 right: -7.5rem;
             }
@@ -121,7 +121,6 @@
                 color: #8892b0;
                 top: 0;
                 right: -18rem;
-                // width: 100%;
                 background: #112240;
                 transition: 0.3s all linear;
 
@@ -166,6 +165,7 @@
                         text-align: end;
                         margin: 0;
                         color: #64ffda;
+                        cursor: pointer;
                     }
                     ol {
                         display: flex;
@@ -186,9 +186,11 @@
                             }
                         }
 
-                        button {
+                        .resume {
+                            text-decoration: none;
                             position: absolute;
                             bottom: -5rem;
+                            left: -0.7rem;
                         }
                     }
                 }
@@ -433,6 +435,14 @@
                         margin-top: 40px;
                     }
                 }
+            }
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        #content {
+            .foote {
+                margin-top: 8rem;
             }
         }
     }
