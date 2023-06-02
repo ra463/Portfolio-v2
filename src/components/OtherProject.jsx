@@ -10,7 +10,7 @@ const OtherProject = () => {
         <span>Listed below</span>
       </div>
       <ul className="list_other">
-        <li>
+        <li className="onhover">
           <div className="main_box">
             <div className="header">
               <div className="first">
@@ -56,7 +56,7 @@ const OtherProject = () => {
             </div>
           </div>
         </li>
-        <li>
+        <li className="onhover">
           <div className="main_box">
             <div className="header">
               <div className="first">
@@ -101,7 +101,7 @@ const OtherProject = () => {
             </div>
           </div>
         </li>
-        <li>
+        <li className="onhover">
           <div className="main_box">
             <div className="header">
               <div className="first">
@@ -145,7 +145,7 @@ const OtherProject = () => {
             </div>
           </div>
         </li>
-        <li>
+        <li className="onhover">
           <div className="main_box">
             <div className="header">
               <div className="first">

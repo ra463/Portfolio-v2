@@ -203,6 +203,15 @@
             a {
                 margin-left: 2rem;
             }
+            .menu_hidden {
+                .item {
+                    ol {
+                        .resume {
+                            left: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -223,6 +232,10 @@
                         padding: 0;
                         align-items: center;
                         justify-content: center;
+
+                        .resume {
+                            left: 4.3rem;
+                        }
                     }
                 }
             }
