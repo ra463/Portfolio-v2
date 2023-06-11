@@ -58,6 +58,10 @@
                     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
                     color: #ccd6f6;
                     margin: 0;
+                    
+                    &:hover {
+                        color: #64ffda;
+                    }
 
                     span {
                         color: #64ffda;
