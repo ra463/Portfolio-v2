@@ -25,7 +25,7 @@ const OtherProject = () => {
                     <FiGithub />
                   </a>
                   <a
-                    href="https://ecommerce-rp.herokuapp.com/"
+                    href="https://ecommerce-7d9b.onrender.com"
                     aria-label="External Link"
                     className="external"
                     rel="noopener noreferrer"
