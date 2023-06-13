@@ -71,7 +71,7 @@ const OtherProject = () => {
                     <FiGithub />
                   </a>
                   <a
-                    href="https://social-rp.herokuapp.com/"
+                    href="https://socialmedia-gxmj.onrender.com/"
                     aria-label="External Link"
                     className="external"
                     rel="noopener noreferrer"
