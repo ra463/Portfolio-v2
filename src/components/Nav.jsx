@@ -159,7 +159,7 @@ const Nav = () => {
             </li>
             <a
               className="resume"
-              href="/Myresume.pdf"
+              href="/MyResume.pdf"
               rel="noopener noreferrer"
               target="_blank"
             >
