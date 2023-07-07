@@ -19,7 +19,7 @@ const Project = () => {
             <p className="project_tag">Project Name</p>
             <h3 className="project_title">
               <a
-                href="https://finderapp.vercel.app/"
+                href="https://finderofficial.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -52,7 +52,7 @@ const Project = () => {
                 <FiGithub />
               </a>
               <a
-                href="https://finderapp.vercel.app/"
+                href="https://finderofficial.vercel.app/"
                 aria-label="External Link"
                 className="external"
                 rel="noopener noreferrer"
